@@ -101,7 +101,67 @@
             </li>
           </ul>
         </section>
-        <section id="reservation" class="reservation">Reservation</section>
+        <section id="reservation" class="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="form reservation__form">
+            <fieldlset class="form__fieldset">
+              <label for="name" class="form__label">
+                Name *
+                <input
+                  type="text"
+                  id="name"
+                  class="form__input"
+                  placeholder="Name Surname"
+                  required
+                />
+              </label>
+              <label for="number" class="form__label">
+                Number of guests *
+                <input
+                  type="number"
+                  id="number"
+                  class="form__input"
+                  placeholder="1-8"
+                  min="1"
+                  max="8"
+                  required
+                />
+              </label>
+              <label for="datetime-local" class="form__label">
+                Date & time *
+                <input
+                  type="datetime-local"
+                  id="datetime-local"
+                  class="form__input"
+                  required
+                />
+              </label>
+              <label for="email" class="form__label">
+                Your email *
+                <input
+                  type="email"
+                  id="email"
+                  class="form__input"
+                  placeholder="email@email.com"
+                  required
+                />
+              </label>
+            </fieldlset>
+            <button class="form__button">Book a table</button>
+            <label
+              for="checkbox"
+              class="form__ label form__label_type_checkbox"
+            >
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="form__checkbox"
+                required
+              />
+              I agree with the terms of use</label
+            >
+          </form>
+        </section>
         <section id="menu" class="menu">Menu</section>
         <section class="about">about</section>
       </main>
